@@ -77,7 +77,7 @@ func Merge(in1, in2 <-chan int) <-chan int {
 }
 
 //file其实就是一种io，取名不取filesource这样有具体含义的
-//其实就是在读数据
+//其实就是在分块读数据,当chunksize为-1时不分块读取而是直接读取
 func ReaderSource(reader io.Reader, chunkSize int64) <-chan int {
 	out := make(chan int, 1024)				//给一个1024的缓存空间，有利于速度  不用收一个用一个
 

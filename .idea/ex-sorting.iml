@@ -4,7 +4,7 @@
   <component name="GoLibraries">
     <option name="urls">
       <list>
-        <option value="file://$MODULE_DIR$/../ttt/src" />
+        <option value="file://$MODULE_DIR$/src" />
       </list>
     </option>
   </component>
